@@ -36,8 +36,9 @@ echo "Done."
 
 # Change the version number in the index file
 echo "Converting version string to 2009."
-INDEXAPXL=$TEM/index.apxl
+INDEXAPXL=$TEMP/index.apxl
 sed -i '' 's/key:version=\"[0-9]*/key:version=\"92008102400/g' $INDEXAPXL
+echo "Done."
 
 # Zip file content
 echo "Zipping $COPY."
